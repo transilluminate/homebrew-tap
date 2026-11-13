@@ -1,25 +1,25 @@
 class Aspero < Formula
   desc "Find, resolve and verify scholarly literature from the command line"
   homepage "https://github.com/transilluminate/aspero"
-  version "0.14.0"
+  version "0.15.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/transilluminate/aspero/releases/download/v0.14.0/aspero-aarch64-apple-darwin.tar.xz"
-      sha256 "c2be4d1c7bc9b918e62f8d4376fd8b3da237e6dff9db258815f78a4ce6d449e0"
+      url "https://github.com/transilluminate/aspero/releases/download/v0.15.0/aspero-aarch64-apple-darwin.tar.xz"
+      sha256 "89807b0931a0fbd89ec1d514196da44ae35b59a860cfad028879750ebf95e6b5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/transilluminate/aspero/releases/download/v0.14.0/aspero-x86_64-apple-darwin.tar.xz"
-      sha256 "30200d1f4b9ccd0a954e9076c8fa023669060ac2ec13ab8d124f37db2b47f8a0"
+      url "https://github.com/transilluminate/aspero/releases/download/v0.15.0/aspero-x86_64-apple-darwin.tar.xz"
+      sha256 "522428ca93d52ad43f7f4789b8b82413c0e4536494ea242dbc1af1f848eb1b18"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/transilluminate/aspero/releases/download/v0.14.0/aspero-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "78d769fff382ab8492e6c89c8610be99d28f7eff249dca8289facf33501ec693"
+      url "https://github.com/transilluminate/aspero/releases/download/v0.15.0/aspero-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "af011010807c63123821c415d5b4603c7122ccb7d49796bada28c61905dc699c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/transilluminate/aspero/releases/download/v0.14.0/aspero-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e488171ed28f979953b7bfb7cf329ceb787e232fcaeaf6e7fa2dd57ef5054213"
+      url "https://github.com/transilluminate/aspero/releases/download/v0.15.0/aspero-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "34988b4431f5370386bcfe617edbe602cb34399414375805bb844096f71b583f"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
